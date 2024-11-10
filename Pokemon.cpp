@@ -2,68 +2,80 @@
 #include <string>
 using namespace std;
 
+// Define an enum for Pokemon choices
+enum PokemonChoice {
+    Charmander,
+    Bulbasaur,
+    Squirtle,
+    InvalidChoice
+};
+
 int main() {
     // Variables to store player name and chosen Pokemon
-    string chosen_door;
+    string player_name;
+    PokemonChoice chosen_pokemon = InvalidChoice; // Default to an invalid choice
 
-    cout << "Welcome, brave adventurer!\n";
-    cout << "You find yourself standing in front of a massive, ancient castle.\n";
-    cout << "The walls are cracked with age,\n";
-    cout << "and the doors creak as they slowly open in front of you.\n";
-    cout << "Inside, there are many rooms, each more mysterious than the last.\n";
-    cout << "Some may hold treasures beyond imagination,\n";
-    cout << "while others may hide dangers lurking in the shadows.\n";
+    // Introduction by the Professor
+    cout << "Professor Oak: Hello there! Welcome to the world of Pokemon!\n";
+    cout << "Professor Oak: My name is Oak. People call me the Pokemon Professor!\n";
+    cout << "Professor Oak: But enough about me. Let's talk about you!\n";
 
+    // Taking player name as input
+    cout << "Professor Oak: First, tell me, what’s your name?\n";
+    cin >> player_name;
 
+    cout << "Professor Oak: Ah, " << player_name << "! What a fantastic name!\n";
+    cout << "Professor Oak: You must be eager to start your adventure. But first, you’ll need a Pokemon of your own!\n";
 
     // Presenting Pokemon choices
-    cout << "Your goal is simple, yet perilous—choose a room!\n";
-    cout << "Once inside, who knows what you may find?\n";
-    cout << "Will it be riches, knowledge, or something… more sinister?\n";
-    cout << "It’s all up to the room you pick.\n";
-    cout << "You are in the castle, choose your room by entering a number (1, 2, or 3).\n";
-    cout << "1. Brown Door\n";
-    cout << "2. Black Door\n";
-    cout << "3. Golden Door\n";
-    cout << "4. Blue Door\n";
+    cout << "Professor Oak: I have three Pokemon here with me. They’re all quite feisty!\n";
+    cout << "Professor Oak: Choose wisely...\n";
+    cout << "1. Charmander - The fire type. A real hothead!\n";
+    cout << "2. Bulbasaur - The grass type. Calm and collected!\n";
+    cout << "3. Squirtle - The water type. Cool as a cucumber!\n";
 
     int choice;
-    cout << "So, which one will you open? Enter the number of "
-        "your choice: ";
+    cout << "Professor Oak: So, which one will it be? Enter the number of your choice: ";
     cin >> choice;
 
-
+    // Map the integer choice to the corresponding enum value
     switch (choice) {
     case 1:
-        chosen_door = "Brown Door";
-        cout << "A room full of gold coins! You can retire now, you lucky soul!\n";
+        chosen_pokemon = Charmander;
         break;
-
     case 2:
-        chosen_door = "Black Door";
-        cout << "A library of ancient books! You gain immense knowledge, but beware… some knowledge comes with a price.\n";
+        chosen_pokemon = Bulbasaur;
         break;
-
     case 3:
-        chosen_door = "Golden Door";
-        cout << "A sleeping dragon! You barely escape with your life. Perhaps next time, choose more wisely...\n";
+        chosen_pokemon = Squirtle;
         break;
-
-    case 4:
-        chosen_door = "Blue Door";
-        cout << "5 Knights are facing town the door at you. Run!\n";
-        break;
-
     default:
-        cout << "Hmm, that doesn't seem right. Let me choose "
-            "for you...\n";
-        chosen_door = "Secret Passage"; // Default if no valid choice is made
-        cout << "A secret passage to the dungeon! Beware, danger lies ahead in the dark corridors.\n";
+        chosen_pokemon = InvalidChoice;
         break;
     }
 
-    cout << "Open " << chosen_door << "\n";
-    cout << "The fate of your adventure lies in the room you choose, Will you find riches or danger? Only time will tell... Choose wisely, adventurer, for once you step inside there’s no turning back.\n";
+    // Respond based on the chosen Pokemon
+    switch (chosen_pokemon) {
+    case Charmander:
+        cout << "Professor Oak: A fiery choice! Charmander is yours!\n";
+        break;
+    case Bulbasaur:
+        cout << "Professor Oak: A fine choice! Bulbasaur is always ready to grow on you!\n";
+        break;
+    case Squirtle:
+        cout << "Professor Oak: Splendid! Squirtle will keep you cool under pressure!\n";
+        break;
+    default:
+        cout << "Professor Oak: Hmm, that doesn't seem right. Let me choose for you...\n";
+        chosen_pokemon = Charmander; // Default to Charmander if invalid choice
+        cout << "Professor Oak: Just kidding! Let's go with Charmander, the fiery dragon in the making!\n";
+        break;
+    }
+
+    // Concluding the first chapter
+    cout << "Professor Oak: " << (chosen_pokemon == Charmander ? "Charmander" : chosen_pokemon == Bulbasaur ? "Bulbasaur" : "Squirtle")
+        << " and you, " << player_name << ", are going to be the best of friends!\n";
+    cout << "Professor Oak: Your journey begins now! Get ready to explore the vast world of Pokemon!\n";
 
     return 0;
 }
