@@ -35,5 +35,8 @@
     <ClInclude Include="Utility.hpp">
       <Filter>Source Files</Filter>
     </ClInclude>
+    <ClInclude Include="Player.hpp">
+      <Filter>Source Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
