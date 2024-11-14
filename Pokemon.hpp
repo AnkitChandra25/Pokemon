@@ -1,7 +1,8 @@
-
 #include <string>
-#include "PokemonType.hpp"
+//#include "PokemonType.hpp"
 using namespace std;
+
+enum class PokemonType;
 
 class Pokemon {
 public:
