@@ -1,10 +1,9 @@
 #include "Player.hpp"
-#include "Pokemon.hpp"
 #include "PokemonChoice.hpp"
 #include "PokemonType.hpp"
 #include "Utility.hpp"
 #include <iostream>
-#include <limits> // Include this header to use numeric_limits
+#include <limits> // Include this header to use std::numeric_limits
 #include <string>
 using namespace std;
 
@@ -14,7 +13,7 @@ public:
     string name;
 
     // Parameterized constructor
-    ProfessorOak(string p_name) { name = p_name; }
+    ProfessorOak(std::string p_name) { name = p_name; }
 
     void greetPlayer(Player& player) {
         cout << name << ": Hello there! Welcome to the world of Pokemon!\n";
@@ -170,7 +169,7 @@ void gameLoop(Player& player) {
             }
             break;
         default:
-            cout << "That's not a valid choice. Try again!\n";
+            std::cout << "That's not a valid choice. Try again!\n";
             break;
         }
 

@@ -3,15 +3,14 @@
 #include "PokemonChoice.hpp"
 #include "PokemonType.hpp"
 #include "Utility.hpp"
-#include <iostream>
-using namespace std;
+#include "iostream"
 
 Player::Player() {
     name = "Trainer";
     chosenPokemon = Pokemon(); // Using the default Pokemon constructor
 }
 
-Player::Player(string p_name, Pokemon p_chosenPokemon) {
+Player::Player(std::string p_name, Pokemon p_chosenPokemon) {
     name = p_name;
     chosenPokemon = p_chosenPokemon;
 }
@@ -31,6 +30,6 @@ void Player::choosePokemon(int choice) {
         chosenPokemon = Pokemon("Pikachu", PokemonType::ELECTRIC, 100);
         break;
     }
-    cout << "Player " << name << " chose " << chosenPokemon.name << "!\n";
+    std::cout << "Player " << name << " chose " << chosenPokemon.name << "!\n";
     Utility::waitForEnter(); // Wait for user to press Enter before proceeding
 }

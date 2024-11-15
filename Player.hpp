@@ -1,10 +1,6 @@
-// Player.hpp
 #include <string>
 #include "Pokemon.hpp"
 using namespace std;
-
-class Pokemon;
-
 class Player {
 public:
     string name;
