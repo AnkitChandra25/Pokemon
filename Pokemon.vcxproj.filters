@@ -44,5 +44,8 @@
     <ClInclude Include="Pokemon.hpp">
       <Filter>Source Files</Filter>
     </ClInclude>
+    <ClInclude Include="grass.hpp">
+      <Filter>Source Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

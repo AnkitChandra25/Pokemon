@@ -133,6 +133,7 @@
     <ClCompile Include="Utility.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="grass.hpp" />
     <ClInclude Include="Player.hpp" />
     <ClInclude Include="Pokemon.hpp" />
     <ClInclude Include="PokemonChoice.hpp" />

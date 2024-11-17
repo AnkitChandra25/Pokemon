@@ -2,10 +2,13 @@
 #include "PokemonChoice.hpp"
 #include "PokemonType.hpp"
 #include "Utility.hpp"
+#include "grass.hpp"
 #include <iostream>
 #include <limits> // Include this header to use std::numeric_limits
 #include <string>
 using namespace std;
+
+
 
 // ProfessorOak class definition
 class ProfessorOak {
@@ -180,6 +183,12 @@ void gameLoop(Player& player) {
 
     cout << "Goodbye, " << player.name << "! Thanks for playing!\n";
 }
+
+Grass caveGrass = {
+    "Cave",
+    {{"Zubat", PokemonType::POISON, 30}, {"Geodude", PokemonType::ROCK, 50}},
+    80
+};
 
 int main() {
     // Create Pokemon and Player objects for the game
