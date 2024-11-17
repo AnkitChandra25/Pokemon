@@ -33,6 +33,9 @@
     <ClCompile Include="Game.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="ProfessorOak.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="PokemonType.hpp">
@@ -50,13 +53,16 @@
     <ClInclude Include="Pokemon.hpp">
       <Filter>Source Files</Filter>
     </ClInclude>
-    <ClInclude Include="grass.hpp">
+    <ClInclude Include="Grass.hpp">
       <Filter>Source Files</Filter>
     </ClInclude>
     <ClInclude Include="WildEncounterManager.hpp">
       <Filter>Source Files</Filter>
     </ClInclude>
     <ClInclude Include="Game.hpp">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ProfessorOak.hpp">
       <Filter>Source Files</Filter>
     </ClInclude>
   </ItemGroup>

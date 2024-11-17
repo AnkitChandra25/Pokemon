@@ -4,6 +4,7 @@
 #include "Utility.hpp"
 #include "WildEncounterManager.hpp"
 #include <iostream>
+
 using namespace std;
 
 Game::Game() {
@@ -26,7 +27,7 @@ void Game::gameLoop(Player& player) {
 
         // Display options to the player
         cout << "\nWhat would you like to do next, " << player.name << "?\n";
-        cout << "1. Battle Wild Pokémon\n";
+        cout << "1. Battle Wild Pokemon\n";
         cout << "2. Visit PokeCenter\n";
         cout << "3. Challenge Gyms\n";
         cout << "4. Enter Pokémon League\n";
