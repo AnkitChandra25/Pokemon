@@ -1,18 +1,15 @@
+// BattleManager.cpp
 #include "BattleManager.hpp"
-#include "Player.hpp"
-#include "Pokemon.hpp"
+#include "BattleState.hpp"
 #include <iostream>
-#include "Utility.hpp"  // Assuming there's a Utility class with waitForEnter method
 
-void BattleManager::handleBattleOutcome(Player& player, bool playerWon) {
-    if (playerWon) {
-        // Player won the battle
-        std::cout << player.chosenPokemon.name << " is victorious! Keep an eye on your Pokémon's health.\n";
+void BattleManager::handleBattleOutcome() {
+    if (battleState.playerPokemon->isFainted()) {
+        // Player's Pokémon has fainted, they lose the battle
+        std::cout << battleState.playerPokemon->name << " has fainted! You lose the battle.\n";
     }
     else {
-        // Player lost the battle
-        std::cout << "Oh no! " << player.chosenPokemon.name << " fainted! You need to visit the PokeCenter.\n";
-        Utility::waitForEnter();
-        std::cout << "Game Over.\n";
+        // Wild Pokémon has fainted, player wins the battle
+        std::cout << "You defeated the wild " << battleState.wildPokemon->name << "! Congratulations!\n";
     }
 }
