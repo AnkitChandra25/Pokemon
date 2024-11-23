@@ -3,6 +3,7 @@
 // Forward declaration of the enum class PokemonType
 enum class PokemonType;
 
+
 using namespace std;
 
 class Pokemon {
