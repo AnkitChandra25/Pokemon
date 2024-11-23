@@ -36,6 +36,9 @@
     <ClCompile Include="ProfessorOak.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="BattleManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="PokemonType.hpp">
@@ -63,6 +66,9 @@
       <Filter>Source Files</Filter>
     </ClInclude>
     <ClInclude Include="ProfessorOak.hpp">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BattleManager.hpp">
       <Filter>Source Files</Filter>
     </ClInclude>
   </ItemGroup>

@@ -127,6 +127,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="BattleManager.cpp" />
     <ClCompile Include="Game.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Player.cpp" />
@@ -136,6 +137,7 @@
     <ClCompile Include="WildEncounterManager.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="BattleManager.hpp" />
     <ClInclude Include="Game.hpp" />
     <ClInclude Include="Grass.hpp" />
     <ClInclude Include="Player.hpp" />

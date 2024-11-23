@@ -3,6 +3,7 @@
 #include "PokemonType.hpp"
 #include "Utility.hpp"
 #include "WildEncounterManager.hpp"
+#include "BattleManager.hpp"  // Include BattleManager header
 #include <iostream>
 
 using namespace std;
@@ -20,6 +21,7 @@ void Game::gameLoop(Player& player) {
 
     int choice;
     bool keepPlaying = true;
+    BattleManager battleManager;  // Create BattleManager instance
 
     while (keepPlaying) {
         // Clear console before showing options
@@ -27,7 +29,7 @@ void Game::gameLoop(Player& player) {
 
         // Display options to the player
         cout << "\nWhat would you like to do next, " << player.name << "?\n";
-        cout << "1. Battle Wild Pokemon\n";
+        cout << "1. Battle Wild Pokémon\n";
         cout << "2. Visit PokeCenter\n";
         cout << "3. Challenge Gyms\n";
         cout << "4. Enter Pokémon League\n";
@@ -45,11 +47,14 @@ void Game::gameLoop(Player& player) {
             Pokemon encounteredPokemon =
                 encounterManager.getRandomPokemonFromGrass(forestGrass);
             cout << "A wild " << encounteredPokemon.name << " appeared!\n";
+            // Start the battle using BattleManager
+            battleManager.startBattle(player, encounteredPokemon);
             break;
         }
         case 2: {
-            cout << "You head to the PokeCenter, but Nurse Joy is out on a coffee "
-                "break. Guess your Pokémon will have to tough it out for now!\n";
+            cout << "You head to the PokeCenter.\n";
+            player.chosenPokemon.heal(); // Heal the player's Pokémon
+            cout << player.chosenPokemon.name << "'s health is fully restored!\n";
             break;
         }
         case 3: {
