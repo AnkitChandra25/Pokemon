@@ -10,14 +10,16 @@ Pokemon::Pokemon() {
     type = PokemonType::NORMAL; // Assuming NORMAL is a valid type in your PokemonType enum
     health = 50;
     maxHealth = 50; // Default max health matches initial health
+    attackPower = 10; // Default attack power
 }
 
 // Parameterized constructor
-Pokemon::Pokemon(string p_name, PokemonType p_type, int p_health) {
+Pokemon::Pokemon(string p_name, PokemonType p_type, int p_health, int p_attackPower) {
     name = p_name;
     type = p_type;
     health = p_health;
     maxHealth = p_health; // Set max health to the initial health
+    attackPower = p_attackPower;
 }
 
 // Copy constructor
@@ -26,6 +28,7 @@ Pokemon::Pokemon(const Pokemon& other) {
     type = other.type;
     health = other.health;
     maxHealth = other.maxHealth; // Copy maxHealth as well
+    attackPower = other.attackPower; // Copy attackPower as well
 }
 
 // Destructor
@@ -48,7 +51,7 @@ bool Pokemon::isFainted() const {
 
 // Attack method to perform an attack on another Pokémon
 void Pokemon::attack(Pokemon& target) {
-    int damage = 10; // Fixed damage for simplicity
+    int damage = attackPower; // Use attack power for damage calculation
     cout << name << " attacks " << target.name << " for " << damage << " damage!\n";
     target.takeDamage(damage); // Apply damage to the target Pokémon
 }
@@ -56,6 +59,12 @@ void Pokemon::attack(Pokemon& target) {
 // Example attack method (without target)
 void Pokemon::attack() {
     cout << name << " attacks with a powerful move!\n";
+}
+
+// Method to restore HP to max health
+void Pokemon::heal() {
+    health = maxHealth; // Restore health to full
+    cout << name << " has been healed to full health (" << health << " HP)!\n";
 }
 
 // Battle function to simulate a battle between the player and a wild Pokémon
