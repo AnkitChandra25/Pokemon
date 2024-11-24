@@ -2,7 +2,6 @@
 #include "Player.hpp"
 #include "Utility.hpp"
 #include <iostream>
-
 using namespace std;
 
 ProfessorOak::ProfessorOak(string p_name) { name = p_name; }
@@ -19,11 +18,14 @@ void ProfessorOak::greetPlayer(Player& player) {
 
 void ProfessorOak::offerPokemonChoices(Player& player) {
 
-    cout << name << ": First, tell me, what’s your name? \t [Please Enter Your Name]\n";
+    cout
+        << name
+        << ": First, tell me, what’s your name? \t [Please Enter Your Name]\n";
     getline(cin, player.name);
     cout << name << ": Ah, " << player.name << "! What a fantastic name!\n";
     Utility::waitForEnter();
-    cout << name << ": You must be eager to start your adventure. But first, "
+    cout << name
+        << ": You must be eager to start your adventure. But first, "
         "you’ll need a Pokemon of your own!\n";
     Utility::waitForEnter();
 
