@@ -91,7 +91,7 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Pikachu.cpp">
-      <Filter>Source Files\include</Filter>
+      <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
