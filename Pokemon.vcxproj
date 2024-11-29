@@ -127,20 +127,25 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="BattleManager.cpp" />
     <ClCompile Include="Game.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Player.cpp" />
     <ClCompile Include="Pokemon.cpp" />
+    <ClCompile Include="ProfessorOak.cpp" />
     <ClCompile Include="Utility.cpp" />
     <ClCompile Include="WildEncounterManager.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="BattleManager.hpp" />
+    <ClInclude Include="BattleState.hpp" />
     <ClInclude Include="Game.hpp" />
-    <ClInclude Include="grass.hpp" />
+    <ClInclude Include="Grass.hpp" />
     <ClInclude Include="Player.hpp" />
     <ClInclude Include="Pokemon.hpp" />
     <ClInclude Include="PokemonChoice.hpp" />
     <ClInclude Include="PokemonType.hpp" />
+    <ClInclude Include="ProfessorOak.hpp" />
     <ClInclude Include="Utility.hpp" />
     <ClInclude Include="WildEncounterManager.hpp" />
   </ItemGroup>
