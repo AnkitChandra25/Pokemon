@@ -4,4 +4,4 @@ enum class PokemonChoice {
 	BULBASAUR,
 	SQUIRTLE,
 	PIKACHU // Default choice
-};
+	};

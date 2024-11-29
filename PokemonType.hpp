@@ -1,3 +1,4 @@
+
 // Define an enum for Pokemon types
 enum class PokemonType {
 	FIRE,
