@@ -81,6 +81,18 @@
     <ClCompile Include="Utility.cpp">
       <Filter>Source Files\src\Utility</Filter>
     </ClCompile>
+    <ClCompile Include="Pidgey.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Caterpie.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Zubat.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Pikachu.cpp">
+      <Filter>Source Files\include</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="WildEncounterManager.hpp">
@@ -115,6 +127,18 @@
     </ClInclude>
     <ClInclude Include="Pokemon.hpp">
       <Filter>Source Files\include\Pokemon</Filter>
+    </ClInclude>
+    <ClInclude Include="Pidgey.hpp">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Caterpie.hpp">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Zubat.hpp">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Pikachu.hpp">
+      <Filter>Source Files</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
