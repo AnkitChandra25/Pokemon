@@ -4,10 +4,10 @@
 namespace N_Pokemon {
     namespace N_Pokemons {
 
-        class Pikachu : public Pokemon {
+        class Charmander : public Pokemon {
         public:
-            Pikachu();
-            void thunderShock(Pokemon* target);
+            Charmander();
+            void flameThrower(Pokemon* target);
         };
 
     }

@@ -129,6 +129,7 @@
   <ItemGroup>
     <ClCompile Include="BattleManager.cpp" />
     <ClCompile Include="Caterpie.cpp" />
+    <ClCompile Include="Charmander.cpp" />
     <ClCompile Include="Game.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Pidgey.cpp" />
@@ -144,6 +145,7 @@
     <ClInclude Include="BattleManager.hpp" />
     <ClInclude Include="BattleState.hpp" />
     <ClInclude Include="Caterpie.hpp" />
+    <ClInclude Include="Charmander.hpp" />
     <ClInclude Include="Game.hpp" />
     <ClInclude Include="Grass.hpp" />
     <ClInclude Include="Pidgey.hpp" />
