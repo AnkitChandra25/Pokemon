@@ -1,8 +1,9 @@
-#pragma once
-#include "Pokemon.hpp"
-#include "PokemonType.hpp"
+#include "../../include/Pokemon/Pokemon.hpp"
+#include "../../include/Pokemon/PokemonType.hpp"
 #include <iostream>
 using namespace std;
+
+namespace N_Pokemon {
 
     // Default constructor
     Pokemon::Pokemon() {
@@ -24,12 +25,12 @@ using namespace std;
     }
 
     // Copy constructor
-    Pokemon::Pokemon(const Pokemon& other) {
-        name = other.name;
-        type = other.type;
-        health = other.health;
-        maxHealth = other.maxHealth;
-        attackPower = other.attackPower;
+    Pokemon::Pokemon(Pokemon* other) {
+        name = other->name;
+        type = other->type;
+        health = other->health;
+        maxHealth = other->maxHealth;
+        attackPower = other->attackPower;
     }
 
     // Reduce HP by the damage amount
@@ -47,8 +48,9 @@ using namespace std;
     void Pokemon::heal() { health = maxHealth; }
 
     // Attack another Pokemon
-    void Pokemon::attack(Pokemon& target) {
-        cout << name << " attacks " << target.name << " for " << attackPower
+    void Pokemon::attack(Pokemon* target) {
+        std::cout << name << " attacks " << target->name << " for " << attackPower
             << " damage!\n";
-        target.takeDamage(attackPower);
+        target->takeDamage(attackPower);
     }
+} // namespace N_Pokemon

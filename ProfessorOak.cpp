@@ -1,12 +1,17 @@
-#include "ProfessorOak.hpp"
-#include "Player.hpp"
-#include "Utility.hpp"
+#include "../../include/Character/ProfessorOak.hpp"
+#include "../../include/Utility/Utility.hpp"
+#include "../../include/Character/Player/Player.hpp"
 #include <iostream>
-using namespace std;
+
+namespace N_Character
+{
+    using namespace std;
+    using namespace N_Utility;
+    using namespace N_Player;
 
     ProfessorOak::ProfessorOak(string p_name) { name = p_name; }
 
-    void ProfessorOak::greetPlayer(Player& player) {
+    void ProfessorOak::greetPlayer(Player* player) {
 
         cout << name << ": Hello there! Welcome to the world of Pokemon!\n";
         Utility::waitForEnter();
@@ -16,22 +21,19 @@ using namespace std;
         Utility::waitForEnter();
     }
 
-    void ProfessorOak::offerPokemonChoices(Player& player) {
+    void ProfessorOak::offerPokemonChoices(Player* player) {
 
-        cout
-            << name
-            << ": First, tell me, what’s your name? \t [Please Enter Your Name]\n";
-        getline(cin, player.name);
-        cout << name << ": Ah, " << player.name << "! What a fantastic name!\n";
+        std::cout << name << ": First, tell me, what’s your name? \t [Please Enter Your Name]\n";
+        std::getline(std::cin, player->name);
+        std::cout << name << ": Ah, " << player->name << "! What a fantastic name!\n";
         Utility::waitForEnter();
-        cout << name
+        std::cout << name
             << ": You must be eager to start your adventure. But first, "
             "you’ll need a Pokemon of your own!\n";
         Utility::waitForEnter();
 
         // Presenting Pokemon choices
-        cout << name
-            << ": I have three Pokemon here with me. They’re all quite feisty!\n";
+        cout << name << ": I have three Pokemon here with me. They’re all quite feisty!\n";
         Utility::waitForEnter();
         cout << name << ": Choose wisely...\n";
         cout << "1. Charmander - The fire type. A real hothead!\n";
@@ -39,20 +41,19 @@ using namespace std;
         cout << "3. Squirtle - The water type. Cool as a cucumber!\n";
 
         int choice;
-        cout << name
-            << ": So, which one will it be? Enter the number of your choice: ";
+        cout << name << ": So, which one will it be? Enter the number of your choice: ";
         cin >> choice;
 
-        player.choosePokemon(choice);
+        player->choosePokemon(choice);
         Utility::waitForEnter();
     }
 
-    void ProfessorOak::explainMainQuest(Player& player) {
+    void ProfessorOak::explainMainQuest(Player* player) {
 
         // Clear the console
         Utility::clearConsole();
 
-        cout << "Professor Oak: " << player.name
+        cout << "Professor Oak: " << player->name
             << "!, I am about to explain you about your upcoming grand "
             "adventure.\n";
         Utility::waitForEnter();
@@ -65,11 +66,11 @@ using namespace std;
         Utility::waitForEnter();
 
         cout << "\n"
-            << player.name
+            << player->name
             << ": Wait... that sounds a lot like every other Pokémon game "
             "out there...\n";
         Utility::waitForEnter();
-        cout << "Professor Oak: Shhh! Don't break the fourth wall, " << player.name
+        cout << "Professor Oak: Shhh! Don't break the fourth wall, " << player->name
             << "! This is serious business!\n";
         Utility::waitForEnter();
 
@@ -82,7 +83,7 @@ using namespace std;
             "many Pokémon you can carry, so choose wisely!\n";
         Utility::waitForEnter();
 
-        cout << "\n" << player.name << ": Sounds like a walk in the park... right?\n";
+        cout << "\n" << player->name << ": Sounds like a walk in the park... right?\n";
         Utility::waitForEnter();
         cout << "Professor Oak: Hah! That’s what they all say! But beware, "
             "young Trainer, the path to victory is fraught with "
@@ -93,7 +94,7 @@ using namespace std;
         cout << "\nProfessor Oak: So, what do you say? Are you ready to "
             "become the next Pokémon Champion?\n";
         Utility::waitForEnter();
-        cout << "\n" << player.name << ": Ready as I’ll ever be, Professor!\n";
+        cout << "\n" << player->name << ": Ready as I’ll ever be, Professor!\n";
         Utility::waitForEnter();
 
         cout << "\nProfessor Oak: That’s the spirit! Now, your journey begins...\n";
@@ -102,3 +103,4 @@ using namespace std;
             "forget to set up the actual game loop... Ahem, onwards!\n";
         Utility::waitForEnter();
     }
+}
