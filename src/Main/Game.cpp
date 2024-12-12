@@ -28,7 +28,6 @@ namespace N_Main
         bool keepPlaying = true;
         BattleManager* battleManager = new BattleManager();
         WildEncounterManager* encounterManager = new WildEncounterManager();
-        N_Pokemon::Pokemon* wildPokemon = new N_Pokemon::Pokemon();
 
         while (keepPlaying) {
             // Clear console before showing options
@@ -91,7 +90,6 @@ namespace N_Main
 
         cout << "Goodbye, " << player->name << "! Thanks for playing!\n";
 
-        delete(wildPokemon);
         delete(encounterManager);
         delete(battleManager);
     }
@@ -108,5 +106,10 @@ namespace N_Main
             player->chosenPokemon->heal();        // Heal the player's Pokémon
             std::cout << player->chosenPokemon->name << "'s health is fully restored!\n";
         }
+    }
+
+    Game::~Game()
+    {
+        delete(wildPokemon);
     }
 }

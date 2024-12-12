@@ -100,6 +100,12 @@
     <ClCompile Include="src\Pokemon\Pokemons\Charmander.cpp">
       <Filter>src\Pokemon\Pokemons</Filter>
     </ClCompile>
+    <ClCompile Include="src\Pokemon\Pokemons\Bulbasaur.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Pokemon\Pokemons\Squirtle.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="include\Battle\WildEncounterManager.hpp">
@@ -149,6 +155,21 @@
     </ClInclude>
     <ClInclude Include="include\Pokemon\Pokemons\Charmander.hpp">
       <Filter>include\Pokemon\Pokemons</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Pokemon\Pokemons\Bulbasaur.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Pokemon\Pokemons\Squirtle.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Move.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MoveName.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Pokemon\Move.hpp">
+      <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
