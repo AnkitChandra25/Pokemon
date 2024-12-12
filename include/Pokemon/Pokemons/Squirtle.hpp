@@ -4,9 +4,9 @@
 namespace N_Pokemon {
     namespace N_Pokemons {
 
-        class Zubat : public Pokemon {
+        class Squirtle : public Pokemon {
         public:
-            Zubat();
+            Squirtle();
             void attack(Move selectedMove, Pokemon* target) override;
         };
 
