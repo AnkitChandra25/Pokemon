@@ -63,91 +63,91 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="BattleManager.cpp">
+    <ClCompile Include="src\Battle\BattleManager.cpp">
       <Filter>src\Battle</Filter>
     </ClCompile>
-    <ClCompile Include="WildEncounterManager.cpp">
+    <ClCompile Include="src\Battle\WildEncounterManager.cpp">
       <Filter>src\Battle</Filter>
     </ClCompile>
-    <ClCompile Include="Game.cpp">
+    <ClCompile Include="src\Main\Game.cpp">
       <Filter>src\Main</Filter>
     </ClCompile>
-    <ClCompile Include="Player.cpp">
+    <ClCompile Include="src\Character\Player\Player.cpp">
       <Filter>src\Character\Player</Filter>
     </ClCompile>
-    <ClCompile Include="ProfessorOak.cpp">
+    <ClCompile Include="src\Character\ProfessorOak.cpp">
       <Filter>src\Character</Filter>
     </ClCompile>
-    <ClCompile Include="Pokemon.cpp">
+    <ClCompile Include="src\Pokemon\Pokemon.cpp">
       <Filter>src\Pokemon</Filter>
     </ClCompile>
-    <ClCompile Include="Utility.cpp">
+    <ClCompile Include="src\Utility\Utility.cpp">
       <Filter>src\Utility</Filter>
     </ClCompile>
     <ClCompile Include="main.cpp" />
-    <ClCompile Include="Zubat.cpp">
+    <ClCompile Include="src\Pokemon\Pokemons\Zubat.cpp">
       <Filter>src\Pokemon\Pokemons</Filter>
     </ClCompile>
-    <ClCompile Include="Pikachu.cpp">
+    <ClCompile Include="src\Pokemon\Pokemons\Pikachu.cpp">
       <Filter>src\Pokemon\Pokemons</Filter>
     </ClCompile>
-    <ClCompile Include="Pidgey.cpp">
+    <ClCompile Include="src\Pokemon\Pokemons\Pidgey.cpp">
       <Filter>src\Pokemon\Pokemons</Filter>
     </ClCompile>
-    <ClCompile Include="Caterpie.cpp">
+    <ClCompile Include="src\Pokemon\Pokemons\Caterpie.cpp">
       <Filter>src\Pokemon\Pokemons</Filter>
     </ClCompile>
-    <ClCompile Include="Charmander.cpp">
+    <ClCompile Include="src\Pokemon\Pokemons\Charmander.cpp">
       <Filter>src\Pokemon\Pokemons</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="WildEncounterManager.hpp">
+    <ClInclude Include="include\Battle\WildEncounterManager.hpp">
       <Filter>include\Battle</Filter>
     </ClInclude>
-    <ClInclude Include="BattleState.hpp">
+    <ClInclude Include="include\Battle\BattleState.hpp">
       <Filter>include\Battle</Filter>
     </ClInclude>
-    <ClInclude Include="BattleManager.hpp">
+    <ClInclude Include="include\Battle\BattleManager.hpp">
       <Filter>include\Battle</Filter>
     </ClInclude>
-    <ClInclude Include="ProfessorOak.hpp">
+    <ClInclude Include="include\Character\ProfessorOak.hpp">
       <Filter>include\Character</Filter>
     </ClInclude>
-    <ClInclude Include="Player.hpp">
+    <ClInclude Include="include\Character\Player\Player.hpp">
       <Filter>include\Character\Player</Filter>
     </ClInclude>
-    <ClInclude Include="Game.hpp">
+    <ClInclude Include="include\Main\Game.hpp">
       <Filter>include\Main</Filter>
     </ClInclude>
-    <ClInclude Include="Utility.hpp">
+    <ClInclude Include="include\Utility\Utility.hpp">
       <Filter>include\Utility</Filter>
     </ClInclude>
-    <ClInclude Include="PokemonChoice.hpp">
+    <ClInclude Include="include\Pokemon\PokemonChoice.hpp">
       <Filter>include\Pokemon</Filter>
     </ClInclude>
-    <ClInclude Include="PokemonType.hpp">
+    <ClInclude Include="include\Pokemon\PokemonType.hpp">
       <Filter>include\Pokemon</Filter>
     </ClInclude>
-    <ClInclude Include="Grass.hpp">
+    <ClInclude Include="include\Pokemon\Grass.hpp">
       <Filter>include\Pokemon</Filter>
     </ClInclude>
-    <ClInclude Include="Pokemon.hpp">
+    <ClInclude Include="include\Pokemon\Pokemon.hpp">
       <Filter>include\Pokemon</Filter>
     </ClInclude>
-    <ClInclude Include="Zubat.hpp">
+    <ClInclude Include="include\Pokemon\Pokemons\Zubat.hpp">
       <Filter>include\Pokemon\Pokemons</Filter>
     </ClInclude>
-    <ClInclude Include="Pidgey.hpp">
+    <ClInclude Include="include\Pokemon\Pokemons\Pidgey.hpp">
       <Filter>include\Pokemon\Pokemons</Filter>
     </ClInclude>
-    <ClInclude Include="Caterpie.hpp">
+    <ClInclude Include="include\Pokemon\Pokemons\Caterpie.hpp">
       <Filter>include\Pokemon\Pokemons</Filter>
     </ClInclude>
-    <ClInclude Include="Pikachu.hpp">
+    <ClInclude Include="include\Pokemon\Pokemons\Pikachu.hpp">
       <Filter>include\Pokemon\Pokemons</Filter>
     </ClInclude>
-    <ClInclude Include="Charmander.hpp">
+    <ClInclude Include="include\Pokemon\Pokemons\Charmander.hpp">
       <Filter>include\Pokemon\Pokemons</Filter>
     </ClInclude>
   </ItemGroup>
