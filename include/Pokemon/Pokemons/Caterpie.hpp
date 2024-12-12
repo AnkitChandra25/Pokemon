@@ -10,5 +10,6 @@ namespace N_Pokemon {
             void bugBite(Pokemon* target);
         };
 
+
     }
 }

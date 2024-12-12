@@ -21,5 +21,6 @@ namespace N_Pokemon {
         void heal();
         void attack(Pokemon* target);
         void takeDamage(int damage);
+        virtual void attack(Pokemon* target) = 0;
     };
 }
