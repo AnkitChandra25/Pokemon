@@ -15,6 +15,6 @@ namespace N_Pokemon {
             target->takeDamage(20);
         }
         //
-    }
+    }//
 }
 //
