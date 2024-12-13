@@ -128,6 +128,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="src\Battle\BattleManager.cpp" />
+    <ClCompile Include="src\Pokemon\StatusEffects\ParalyzedEffect.cpp" />
     <ClCompile Include="src\Pokemon\Pokemons\Bulbasaur.cpp" />
     <ClCompile Include="src\Pokemon\Pokemons\Caterpie.cpp" />
     <ClCompile Include="src\Pokemon\Pokemons\Charmander.cpp" />
@@ -147,6 +148,7 @@
     <ClInclude Include="include\Battle\BattleManager.hpp" />
     <ClInclude Include="include\Battle\BattleState.hpp" />
     <ClInclude Include="include\IStatusEffect.hpp" />
+    <ClInclude Include="include\Pokemon\StatusEffects\ParalyzedEffect.hpp" />
     <ClInclude Include="include\Pokemon\Move.hpp" />
     <ClInclude Include="include\Pokemon\Pokemons\Bulbasaur.hpp" />
     <ClInclude Include="include\Pokemon\Pokemons\Caterpie.hpp" />
