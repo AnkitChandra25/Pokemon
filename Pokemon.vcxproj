@@ -128,6 +128,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="src\Battle\BattleManager.cpp" />
+    <ClCompile Include="src\Pokemon\StatusEffects\ParalyzedEffect.cpp" />
     <ClCompile Include="src\Pokemon\Pokemons\Bulbasaur.cpp" />
     <ClCompile Include="src\Pokemon\Pokemons\Caterpie.cpp" />
     <ClCompile Include="src\Pokemon\Pokemons\Charmander.cpp" />
@@ -146,12 +147,15 @@
   <ItemGroup>
     <ClInclude Include="include\Battle\BattleManager.hpp" />
     <ClInclude Include="include\Battle\BattleState.hpp" />
+    <ClInclude Include="include\Pokemon\StatusEffects\IStatusEffect.hpp" />
+    <ClInclude Include="include\Pokemon\StatusEffects\ParalyzedEffect.hpp" />
     <ClInclude Include="include\Pokemon\Move.hpp" />
     <ClInclude Include="include\Pokemon\Pokemons\Bulbasaur.hpp" />
     <ClInclude Include="include\Pokemon\Pokemons\Caterpie.hpp" />
     <ClInclude Include="include\Pokemon\Pokemons\Charmander.hpp" />
     <ClInclude Include="include\Main\Game.hpp" />
     <ClInclude Include="include\Pokemon\Grass.hpp" />
+    <ClInclude Include="include\Pokemon\StatusEffects\StatusEffectType.hpp" />
     <ClInclude Include="Move.hpp" />
     <ClInclude Include="MoveName.hpp" />
     <ClInclude Include="include\Pokemon\Pokemons\Pidgey.hpp" />
