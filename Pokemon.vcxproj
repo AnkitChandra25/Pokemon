@@ -147,7 +147,7 @@
   <ItemGroup>
     <ClInclude Include="include\Battle\BattleManager.hpp" />
     <ClInclude Include="include\Battle\BattleState.hpp" />
-    <ClInclude Include="include\IStatusEffect.hpp" />
+    <ClInclude Include="include\Pokemon\StatusEffects\IStatusEffect.hpp" />
     <ClInclude Include="include\Pokemon\StatusEffects\ParalyzedEffect.hpp" />
     <ClInclude Include="include\Pokemon\Move.hpp" />
     <ClInclude Include="include\Pokemon\Pokemons\Bulbasaur.hpp" />
@@ -155,6 +155,7 @@
     <ClInclude Include="include\Pokemon\Pokemons\Charmander.hpp" />
     <ClInclude Include="include\Main\Game.hpp" />
     <ClInclude Include="include\Pokemon\Grass.hpp" />
+    <ClInclude Include="include\Pokemon\StatusEffects\StatusEffectType.hpp" />
     <ClInclude Include="Move.hpp" />
     <ClInclude Include="MoveName.hpp" />
     <ClInclude Include="include\Pokemon\Pokemons\Pidgey.hpp" />

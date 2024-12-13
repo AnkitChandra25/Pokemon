@@ -174,10 +174,13 @@
     <ClInclude Include="include\Pokemon\Move.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="include\IStatusEffect.hpp">
+    <ClInclude Include="include\Pokemon\StatusEffects\IStatusEffect.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="include\Pokemon\StatusEffects\ParalyzedEffect.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Pokemon\StatusEffects\StatusEffectType.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

@@ -1,6 +1,7 @@
 #include "Pokemon/Pokemon.hpp"
 
 
+
 class IStatusEffect {
 public:
     // Apply the effect (e.g., poison, burn)
@@ -17,4 +18,4 @@ public:
     virtual void clearEffect(Pokemon* target) = 0;
 
     virtual ~IStatusEffect() = default;
-}
+};
