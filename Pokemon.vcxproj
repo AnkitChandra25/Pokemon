@@ -146,6 +146,7 @@
   <ItemGroup>
     <ClInclude Include="include\Battle\BattleManager.hpp" />
     <ClInclude Include="include\Battle\BattleState.hpp" />
+    <ClInclude Include="include\IStatusEffect.hpp" />
     <ClInclude Include="include\Pokemon\Move.hpp" />
     <ClInclude Include="include\Pokemon\Pokemons\Bulbasaur.hpp" />
     <ClInclude Include="include\Pokemon\Pokemons\Caterpie.hpp" />

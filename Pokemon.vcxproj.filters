@@ -171,5 +171,8 @@
     <ClInclude Include="include\Pokemon\Move.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="include\IStatusEffect.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
